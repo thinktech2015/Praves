@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Paragraph & Typographic */
 p {
-    line-height: 28px;
+    line-height: 25px;
     margin-bottom: 25px;
 }
 
@@ -430,18 +430,27 @@ a:after {
 .divider2 {
 	background-image: url('../assets/bg/divider2.jpg')
 }
-
 .divider3 {
-	background-image: url('../assets/bg/divider3.jpg');
-	margin-top: 0px;
+    background-image: url('../assets/bg/divider3.jpg')
+}
+.divider4 {
+    background-image: url('../assets/bg/divider4.jpg')
 }
 
-.divider4 {
-	background-image: url('../assets/bg/divider4.jpg')
+.divider5 {
+	background-image: url('../assets/bg/divider5.jpg');
+	margin-top: 0px;
 }
 
 .divider6 {
 	background-image: url('../assets/bg/divider6.jpg')
+}
+.divider7 {
+    background-image: url('../assets/bg/divider7.jpg')
+}
+
+.divider8 {
+	background-image: url('../assets/bg/divider8.jpg')
 }
 
 
@@ -644,6 +653,52 @@ a:after {
 #career_ul {
     margin-left: 20px;
 }
+
+/* ==========================================================================
+   Community Section
+   ========================================================================== */
+
+#community_style {
+    font-family: "sans-serif";
+    font-weight: 300;
+    font-size: 14px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+#community_img1 {
+    margin-top: -8%;
+}
+
+#community_col-lg-4 .col-md-4 {
+    background: #F2F2F2;
+    padding: 20px !important ;
+}
+
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+
+#full_form {
+    margin-left: -7%;
+    margin-top: -8%;
+}
+
+#full_form #contact-form {
+    background: none;
+}
+
+#full_form #contact-form label span {
+    margin:2px 0;
+}
+
+#full_form #contact-form button[type="submit"] {
+    width: 91%;
+    background-image:linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
+    background-image:-moz-linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
+    background-image:-webkit-linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
+    }
 
 /* ==========================================================================
    MEDIA QUERIES
