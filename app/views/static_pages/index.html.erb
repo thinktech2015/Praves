@@ -1,41 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Our professional mobile apps developers build a custom mobile application for  your business. Contact Us  today for free quote and discount.">
-    <meta name="author" content="Praves technologies">
   
-    <!-- <link rel="shortcut icon" href="/assets/favicon.ico"> -->
-    <!-- <link rel ="icon" type="image/ico" href= "/assets/favicon.ico"> -->
-    <link rel="stylesheet" type="image/png" href="/assets/career2.png">
-
-    <title>Moblie App Development Company |  Business  Apps Developer - Praves Technologies</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/assets/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/icomoon.css">
-    <link href="/assets/animate-custom.css" rel="stylesheet">
-    <link href="/assets/contact.css" rel="stylesheet">
-
-
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="/assets/jquery.min.js"></script>
-	<script type="text/javascript" src="/assets/modernizr.custom.js"></script>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="/assets/html5shiv.js"></script>
-      <script src="/assets/respond.min.js"></script>
-    <![endif]-->
-  </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
   
@@ -43,27 +8,23 @@
   	<div id="navbar-main">
       <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
-    	<div>
-     <a href = "/" class = "nav navbar-nav navbar-left"><%= image_tag("logo.png",size:"177x65", alt: "logo") %></a>
-        </div>
+    	
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+            <span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span>
           </button>
           
-          <!-- <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a> -->
+          <a id="navbar_logo" class="navbar-brand hidden-xs hidden-sm" href="/"><span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span></a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            
-			<li> <a href="#headerwrap" class="smoothScroll" style="margin-left: 10px;"> Home </a></li>
+          <ul class="nav navbar-nav">            
+			<li> <a href="#headerwrap" class="smoothScroll"> Home </a></li>
 			<li> <a href="#about" class="smoothScroll"> About </a></li>
 			<li> <a href="#services" class="smoothScroll"> Services </a></li>
 			<li> <a href="#technologies" class="smoothScroll"> Technologies </a></li>
 			<li> <a href="#clients" class="smoothScroll"> Clients </a></li>
 			<li> <a href="#career" class="smoothScroll"> Career </a></li>
-			<li> <a href="#community" class="smoothScroll"> Community </a></li>
 			<li> <a href="#industries" class="smoothScroll"> Industries </a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact </a></li>
 
@@ -78,56 +39,31 @@
 
   
   
-		<!-- ==== HEADERWRAP ==== -->
+<!-- ==== HEADERWRAP  OR HOME ==== -->
 	    
-	        <div class="container" id="headerwrap" name="home">
+	        <div class="container" id="headerwrap" name="headerwrap">
                
                 <div class="row white">
                 	
 			<header class="clearfix">
-	  		 		<!-- <h1><span class="icon icon-shield"></span></h1>
-	  		 		<p>A Bootstrap 3 One Page Theme.</p>
-	  		 		<p>Exclusive for BlackTie.co.</p> -->
+	  	<h1><span><br><a href = "/"><%= image_tag("logo.png",size:"283x104", alt: "logo") %></a></span></h1>
+
+	  		 		<p>Solutions for all kind of Businesses, any size, anywhere with Mobile App & Responsive Web Design.</p>
+	  		 		
 	  		</header>
 	  		        
 	  		    </div>   
 	        </div>
 	    
 
-		<!-- ==== GREYWRAP ==== -->
-		<div id="service_home">
-		<div id="greywrap">
-			<div class="row">
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_sap.png",size:"60x60", alt: "SAP Solutions") %>
-					<a href="#"><h5>SAP Solutions & Consulting</h5></a>
-				</div>
-					
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_software.png",size:"60x60", alt: "Software Testing") %>
-					<a href="#"><h5>Software Testing & QA</h5></a>
-				</div>
-				
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile-App") %>
-					<a href="#"><h5>Mobile Apps & Web Development</h5></a>
-				</div>
-
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_e_learning.png",size:"60x60", alt: "E-Learning") %>
-					<a href="#"><h5>E-Learning & Classroom Training</h5></a>
-				</div>
-
-			</div>
-		</div>   <!-- greywrap -->
-	</div>
+		
 		
 		
 <!-- ==== ABOUT ==== -->
 		<div class="container" id="about" name="about">
 			<div class="row white">
 			<br><br>
-				<h1 class="centered">A LITTLE ABOUT OUR AGENCY</h1>
+				<h1 class="centered">A LITTLE ABOUT US</h1>
 				<hr>
 				
 				<div align="justify" class="col-lg-6">
@@ -145,7 +81,7 @@
 			<!-- <div class="container"> -->
 				<h1>INTEGRITY. PEOPLE. PERFORMANCE.</h1>
 				<hr>
-				<p>We have the solution to all your business problems.</p>
+				<p><b>We have the solution to all your business problems.</b></p>
 			<!-- </div> --><!-- container -->
 		</section><!-- section -->
 		
@@ -160,34 +96,40 @@
 				<br>
 				<div id="greywrap">
 				<div class="row">
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_sap.png",size:"60x60", alt: "SAP Solutions") %>
-					<a href="#"><h3>SAP PRACTICES</h3></a>
+				<div class="col-lg-4 callout" id="greywrap_link">
+					<a href="static_pages/services">
+					<%= image_tag("service_responsive_design.png",size:"80x60", alt: "Responsive Web Design") %>
+					<h3>Responsive Web Design and Development</h3></a>
 				</div>
 					
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile-App") %>
-					<a href="#"><h3>MOBILE APP & WEB DEVELOPMENT</h3></a>
+				<div class="col-lg-4 callout" id="greywrap_link">
+					<a href="static_pages/services#mobile">
+					<%= image_tag("service_graphics.png",size:"60x60", alt: "Graphic Design") %>
+					<h3>Graphic Design and Development</h3></a>
 				</div>
 				
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_e_learning.png",size:"60x60", alt: "E-Learning") %>
-					<a href="#"><h3>E-LEARNING CONTENT DEVELOPMENT</h3></a><br><br>
+				<div class="col-lg-4 callout" id="greywrap_link">
+					<a href="#">
+					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile App Development") %>
+					<h3>Mobile App Development (iOS and Android)</h3></a><br><br>
 				</div>
 
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_software.png",size:"60x60", alt: "Software Testing") %>
-					<a href="#"><h3>SOFTWARE TESTING & QA</h3></a>
+				<div class="col-lg-4 callout" id="greywrap_link">
+					<a href="#">
+					<%= image_tag("service_software.png",size:"60x60", alt: "Software Development") %>
+					<h3>Custom Software Development</h3></a>
 				</div>
 					
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_corporate.png",size:"60x60", alt: "Corporate Training") %>
-					<a href="#"><h3>CORPORATE TRAINING</h3></a>
+				<div class="col-lg-4 callout" id="greywrap_link">
+					<a href="#">
+					<%= image_tag("service_mobile_marketing.png",size:"60x60", alt: "Mobile Marketing") %>
+					<h3>Mobile Marketing and Solutions</h3></a>
 				</div>
 				
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_GIS.png",size:"60x60", alt: "GIS service") %>
-					<a href="#"><h3>GIS SERVICE</h3></a><br>
+				<div class="col-lg-4 callout" id="greywrap_link">
+					<a href="#">
+					<%= image_tag("service_webapp.png",size:"60x60", alt: "Web App Development") %>
+					<h3>WebApp Development</h3></a><br>
 				</div>
 			</div>
 			</div>
@@ -208,8 +150,8 @@
 		 <section class="section-divider textdivider divider2">
 			<div class="container">
 				<h1>WE ARE HERE TO PROVIDE EXPERTISE</h1>
-				<hr>
-				<p>We don’t believe in just building a software system, but we strive to deliver you a solution.</p>
+				<hr><br>
+				<p><b>We don’t believe in just building a software system, but we strive to deliver you a solution.</b></p>
 			</div>
 		</section> <!-- section -->
 		
@@ -223,35 +165,33 @@
 				<br>
 				<div id="greywrap">
 				<div class="row">
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_sap.png",size:"60x60", alt: "SAP Solutions") %>
-					<a href="#"><h3>SAP PRACTICES</h3></a>
+				<div class="col-lg-3 callout">
+					<a href="#">
+					<%= image_tag("techno_windows_ iphone_android.png",size:"60x60", alt: "Mobile-App") %>
+					<h3>Mobile:</h3><h5> iOS and Android</h5></a>
 				</div>
 					
-				<div class="col-lg-4 callout">
-					<%= image_tag("techno_windows_ iphone_android.png",size:"60x60", alt: "Mobile-App") %>
-					<a href="#"><h3>I-PHONE AND ANDROID PLATFORM</h3></a>
+				<div class="col-lg-3 callout">
+					<a href="#">
+					<%= image_tag("techno_cloud.png",size:"60x60", alt: "Mobile-App") %>
+					<h3>Cloud Platforms:</h3><h5> Google Cloud, Amazon Web Services, Windows Azure and more</h5></a>
 				</div>
 				
-				<div class="col-lg-4 callout">
-					<%= image_tag("techno_adobe_captivate.png",size:"60x60", alt: "E-Learning") %>
-					<a href="#"><h3>ADOBE CAPTIVATE</h3></a><br><br>
+				<div class="col-lg-3 callout">
+					<a href="#">
+					<%= image_tag("techno_web-tech.png",size:"60x60", alt: "E-Learning") %>
+					<h3>Web Technologies: </h3><h5>HTML5, CSS3, PHP Framework, NodeJS, Microsoft ,NET</h5></a>
 				</div>
 
-				<div class="col-lg-7 callout">
-					<%= image_tag("techno_softwarre_testing.png",size:"60x60", alt: "Software Testing") %>
-					<a href="#"><h3>HP,RATIONAL TESTING TOOLS</h3></a>
-				</div>
-					
-				<div class="col-lg-2 callout">
-					<%= image_tag("techno_arcgis.png",size:"100x60", alt: "Corporate Training") %>
-					<a href="#"><h3>ArcGIS TOOL</h3></a>
-				</div>
+				<div class="col-lg-3 callout">
+					<a href="#">
+					<%= image_tag("techno_web_cms.png",size:"60x60", alt: "Software Testing") %>
+					<h3>Web CMS:</h3><h5> Wordpress, Joomla, Drupal</h5></a>
+				</div>					
 				
 			</div>
 			</div>
 			</div><!-- row -->
-		<br>
 
      </div><!-- container -->
      <!-- ==== SECTION DIVIDER3 -->
@@ -259,7 +199,7 @@
 			<div class="container">
 				<h1>INNOVATIVE TECHNOLOGY SOLUTIONS</h1>
 				<hr>
-				<p>You can rely on us for high quality of deliverable and successful implementation.</p>
+				<p><b>You can rely on us for high quality of deliverable and successful implementation.</b></p>
 			</div>
 		</section> <!-- section -->
 
@@ -274,14 +214,12 @@
 				<br><br>
 				<div class="col-lg-3 centered">
 					<a href="http://www.spiriteinfosystem.com/" target = "_blank"><img class="img" src="/assets/clientlogo1.jpg" height="120px" width="160px" alt="">
-					<br>
 					<h5><b>SPIRITE INFOSYSTEM</b></h5></a>
 					
 				</div><!-- col-lg-3 -->
 				
 				<div class="col-lg-3 centered">
 					<a href="http://www.westworks.ca/" target="_blank"><img class="img" src="/assets/clientlogo2.jpg" height="120px" width="160px" alt="">
-					<br>
 					<h5><b>WEST WORKS</b></h5></a>
 					<!-- <a href="#" class="icon icon-twitter"></a>
 					<a href="#" class="icon icon-facebook"></a>
@@ -291,14 +229,12 @@
 				
 				<div class="col-lg-3 centered">
 					<a href="http://www.motileplus.com/" target="_blank"><img class="img" src="/assets/clientlogo3.jpg" height="120px" width="160px" alt="">
-					<br>
 					<h5><b>MOTILE PLUS</b></h5></a>
 					
 				</div><!-- col-lg-3 -->
 				
 				<div class="col-lg-3 centered">
 					<a href="http://www.altimetrik.com/" target="_blank"><img class="img" src="/assets/clientlogo4.png" height="120px" width="160px" alt="">
-					<br>
 					<h5><b>ALTIMETRIK</b></h5></a>
 					
 				</div><!-- col-lg-3 -->
@@ -311,7 +247,7 @@
 			
 				<h1>PERFORMANCE DELIVERED</h1>
 				<hr>
-				<p>We do not make deals, We build relations.</p>
+				<p><b>We do not make deals, We build relations.</b></p>
 			
 		</section><!-- section -->
 
@@ -343,7 +279,7 @@
       			<div>
         			<label>
           			<span>Name: *</span>
-          			<input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" required autofocus>
+          			<input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" required >
         			</label>
       			</div>
       			<div>
@@ -361,13 +297,13 @@
      			<div>
         			<label>
           			<span>Qualification: *</span>
-          			<input placeholder="Enter the qualification" type="text" tabindex="4" pattern="[a-zA-Z. ]{1,50}" id="contact_qualification" name="contact[qualification]" required autofocus>
+          			<input placeholder="Enter the qualification" type="text" tabindex="4" pattern="[a-zA-Z. ]{1,50}" id="contact_qualification" name="contact[qualification]" required>
         			</label>
       			</div>
       			<div>
         			<label>
           			<span>Upload Resume: *</span>
-          			<input placeholder="Upload a file" type="file" tabindex="5" pattern="[a-zA-Z. ]{1,50}" id="contact_file" name="contact[file]" required autofocus>
+          			<input placeholder="Upload a file" type="file" tabindex="5" pattern="[a-zA-Z. ]{1,50}" id="contact_file" name="contact[file]" required>
         			</label>
       			</div>
       			<div>
@@ -425,100 +361,10 @@
 				<br><br><br><br><br><br>
 				<h1>OPPORTUNITIES TO CLIMB GREATER HEIGHTS</h1>
 				<hr>
-				<P>Lets work together and explore opportunities.</P>
+				<P><b>Lets work together and explore opportunities.</b></P>
 			</div><!-- container -->
 		</section><!-- section -->
 		
-
-
-		
-<!-- ==== COMMUNITY ==== -->
-		<div class="container" id="community" name="community">
-		<br><br><br>
-			<div class="row">
-				<br>
-				<h1 class="centered">CORPORATE SOCIAL RESPONSIBILITY</h1>
-				<hr>				
-			</div><!-- /row -->
-		<div class="row" id="community_style">	
-			<div class="col-lg-12">		
-				<H3>AKSHAR Welfare Society</H3>
-				<P align="justify">AKSHAR was founded by our CEO – Avneesh Gupta in June 2009. AKSHAR is an India based Non-Profit Organization with the mission to ensure that every extremely poor child is in school and learning well. AKSHAR Initiatives is providing multiple solutions for bringing quality to elementary education in extremely poor areas of India. AKSHAR is an acronym for 'Activists for Knowledge Stimulated Harmony and Advancement in Rural areas'. AKSHAR has an approach of replicable, comprehensive, scalable and cost-effective education solutions. Currently, AKSHAR works in the interior villages of Uttar Pradesh and Bihar provinces of Inda, and will soon expand its work to reach the entire state of India through its close partnership with the various successful professionals and organizations.All Akshar’s programs are child-centric and are designed to ensure that:</P>
-		<ul>
-			<li>Enrollment of children from extremely poor family in schools increase.</li>
-			<li>Dropouts from schools decrease.</li>
-			<li>Children’s learning outcomes, leadership qualities and overall development improve.</li>
-		</ul>
-
-		</div>
-
-			<div class="col-lg-7">				
-						
-					
-			<h3>AKSHAR’s Objectives</h3>
-	<p><ul align="justify">
-			<li>Run Class-room teaching programs for the underprivileged children in rural areas who don’t have access to quality education.</li>
-			<li>Provide supplemental cultural, moral and extra-curricular education to underprivileged children who don’t get proper informal education from at their home due to poverty and illiteracy in their family.</li>
-			<li>Help the most poverty-ridden section of the society by distributing basic amenities like food and clothing through its planned distribution drives.</li></ul></p>
-						
-			<!-- <p><a href="#" class="icon icon-link"> Read More</a></p> -->
-						
-			</div>
-
-			<div class="col-lg-5" id="community_img1">
-				<p><img class="img" src="/assets/community1.jpg"></p>	
-			</div>
-
-			<div class="col-lg-12" id="community_col-lg-4">
-        	<h3>AKSHAR’s Project Areas</h3>
-        <!-- MAP IMAGE 1 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56436.2935559481!2d79.895651!3d27.863026000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaeca83a0c5e6fb37!2sAkshar+Welfare+Society!5e0!3m2!1sen!2sus!4v1405578563345" width="400" height="350" frameborder="0" style="border:0"></iframe>							
-					<h5 align="center">AKSHAR<br>Azizganj,Shahjahanpur.<br>Uttar Pradesh 242001.<br>India +91 97 94 139955</h5>		
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-
-				<!-- MAP IMAGE 2 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57649.176546415416!2d81.87907!3d25.435805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60b4efd98cb3eaab!2sAKSHAR+Welfare+Society!5e0!3m2!1sen!2sus!4v1405580116206" width="400" height="350" frameborder="0" style="border:0"></iframe>
-					<h5 align="center">AKSHAR<br>Triveni Rd, Daraganj,Allahabad<br>Uttar Pradesh.<br>India +91 97 94 139955</h5>	
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- MAP IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d923872.0442804325!2d83.841417!3d25.241129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x88970de2e23d7631!2sAKSHAR+Welfare+Society!5e0!3m2!1sen!2sus!4v1405580285886" width="400" height="350" frameborder="0" style="border:0"></iframe>							
-					<h5 align="center">AKSHAR<br>Village - Akawani, Sasaram, Karakat<br>Bihar 821115.<br>India +91 97 94 139955</h5>
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-		</div>
-		</div><!-- /row -->
-			
-				
-			<br>
-			<br>
-		
-	
-
-		<!-- ==== SECTION DIVIDER6 ==== -->
-		<section class="section-divider textdivider divider6">
-			<div class="container">
-				<h1>BE RSEPONSIBLE FOR BETTER TOMORROW</h1>
-				<hr>
-				<!-- <p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p> -->
-			</div>
-		</section>  <!-- section -->
-	</div><!-- /container -->
 
 		<!-- ==== INDUSTRIES ==== -->
 		<div class="container" id="industries" name="industries">
@@ -534,9 +380,7 @@
 			
 			<P>Our experienced professionals come from multiple industrial domains. They have worked globally and understand the nuances of offshore-onshore model, delivery approaches, cultural sensitivities. Our software professionals have experience working in following various Industries like:</P>
 			<div class="row">	
-			
-				
-				
+						
 				
 						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
 						      a modal for each of your projects. -->
@@ -658,27 +502,23 @@
 				<hr>
 				<div class="col-lg-4">
 					<h4>Contact Information</h4>
-					<p><span class="icon icon-home"></span> <b>Address 1</b><br> 
-					Bankers Hall, West Tower
-					10th Floor, 888-3 Street SW
-					Calgary, AB T2P 5C5
-					Canada.<br/>
-						<span class="icon icon-home"></span><b>Address 2</b><br>
+					<p>
+					<span class="icon icon-home"></span><b>Address</b><br>
 					Sun Life Plaza, West Tower
 					144-4 Avenue SW, Suite 1600
 					Calgary, AB T2P 3N4
-					Canada. 
-						<span class="icon icon-phone"></span> +14034620868  <br/>
-						<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
-						<span class="icon icon-envelop"></span> <a href="#"> email@pravestech.ca</a> <br/>
-						<span class="icon icon-twitter"></span> <a href="#"> twitter </a> <br/>
-						<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/PravesTechnologies">Praves Technologies</a> <br/>
+					Canada.<br> 
+					<span class="icon icon-phone"></span> +14034620868  <br/>
+					<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
+					<span class="icon icon-envelop"></span> email@pravestech.ca <br/>
+					<span><%= image_tag("linkedin.png", alt: "linkedin") %></span> <a target="_blank" href="https://www.linkedin.com/company/praves-technologies-ltd-?"> Follow Us </a> <br/>
+					<span class="icon icon-facebook"></span> <a target="_blank" href="https://www.facebook.com/PravesTechnologies">Like Us</a> <br/>
 					</p>
 				</div><!-- col -->
 				
 				<div class="col-lg-4">
 					<h4>Reach Us</h4>
-					<p>Contact Us to know more about us and to get our quote.</p>
+					<p><b>Contact Us to know more about us and to get our quote.</b></p>
 					
 	<div id="full_form">    
     
@@ -687,7 +527,7 @@
       <div>
         <label>
           <span>Name: *</span>
-          <input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" required autofocus>
+          <input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" required>
         </label>
       </div>
       <div>
@@ -719,7 +559,7 @@
 				
 				<div class="col-lg-4">
 					<h4>Our Location</h4>
-					<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20067.49222289879!2d-114.069923!3d51.045027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ffcc79191d9%3A0x24ed4a97bdfe119c!2s888+3+St+SW%2C+Calgary%2C+AB+T2P%2C+Canada!5e0!3m2!1sen!2sus!4v1405510334679" width="400" height="400" frameborder="0" style="border:0"></iframe></p>
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1254.1610603064853!2d-114.0692075!3d51.0471397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ba24dbae70547bd!2sPRAVES+Technologies+Ltd.!5e0!3m2!1sen!2sin!4v1406119267342" width="400" height="300" frameborder="0" style="border:0"></iframe></p>
 				</div><!-- col -->
 
 			</div><!-- row -->
@@ -730,19 +570,14 @@
 			<div class="container">
 				<h1>SITUATED IN CALGARY, CANADA.</h1>
 				<hr>
-				<p>Bankers Hall, West Tower	10th Floor, 888-3 Street</p>
-				<p>+14034620868</p>
-				<p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
+				<p><b>Sun Life Plaza, West Tower, 144-4 Avenue SW, Suite 1600, Calgary<b></p>
+				<p><b><span class="icon icon-phone">+14034620868</span><b></p>
 			</div><!-- container -->
 		</section><!-- section -->
 
 		
 
-		<div id="footerwrap">
-			<div class="container">
-				<h4> <a href="/">Praves Technologies Ltd.</a> - Copyright &copy; 2014</h4>
-			</div>
-		</div>
+		
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -754,7 +589,7 @@
 	<script type="text/javascript" src="/assets/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="/assets/smoothscroll.js"></script>
     <script type="text/javascript" src="/assets/jquery-func.js"></script>
-    <script src="/assets/contact.js"></script>
+    <script type="text/javascript" src="/assets/contact.js"></script>
 
 	
   </body>

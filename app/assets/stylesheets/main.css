@@ -1,11 +1,10 @@
 /*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
+ * Author: Praves technologies
+ * URL: http://www.pravestech.ca/
  *
- * Project Name: SHIELD - Free Bootstrap 3 Theme
- * Version: 1.0
- * Date: 02-11-2013
- * URL: http://blacktie.co/
+ * Project Name: Praves Technology
+ * Date: 10-07-2014
+ * URL: http://www.pravestech.ca/
  */
 
 
@@ -84,10 +83,10 @@ body {
 }
 
 body {
-    font-family: "Lato";
+    font-family: sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #555;
+    color: #000000;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -150,7 +149,7 @@ hr:before {
 }
 
 a img {
-    background: #DDD7D7;
+    background: none;
 }
 
 .odd a img {
@@ -161,7 +160,7 @@ a img {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 700;
-    color: #333;
+    color: #000000;
 }
 
 
@@ -279,7 +278,7 @@ a:after {
     background-position: center center;
     min-height: 732px;
     width: 100%; 
-    height: 100%; 
+    height: 100% 
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -311,11 +310,6 @@ a:after {
 	letter-spacing: 3px;
 	margin-left: 15px;
 	text-shadow: 1px 1px 1px #000;
-}
-
-#service_home {
-    margin-top: -11.5%;
-    opacity: 0.8;
 }
 
 #greywrap {
@@ -634,7 +628,12 @@ a:after {
 /* ==========================================================================
    Register and Login section
    ========================================================================== */
-
+#navbar_logo {
+  /*margin-left: -4em;
+    margin-top: -0.20em;
+    margin-right: 2em;*/
+    margin: -0.20em 2em 0em -4em;
+}
 
 #reg-id {
     margin-left: 70%;
@@ -646,6 +645,24 @@ a:after {
     position: absolute;
 }
 
+
+/* ==========================================================================
+   Services main page section
+   ========================================================================== */
+
+/*#greywrap #greywrap_link :hover {
+-webkit-transform: scale(1.07,1.07);
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.07,1.07);
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-duration: 500ms;
+    position: relative;
+    z-index: 99;
+    overflow: hidden; ;
+}*/
+
+
 /* ==========================================================================
    Career Section
    ========================================================================== */
@@ -654,27 +671,7 @@ a:after {
     margin-left: 20px;
 }
 
-/* ==========================================================================
-   Community Section
-   ========================================================================== */
 
-#community_style {
-    font-family: "sans-serif";
-    font-weight: 300;
-    font-size: 14px;
-    color: #555;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-}
-
-#community_img1 {
-    margin-top: -8%;
-}
-
-#community_col-lg-4 .col-md-4 {
-    background: #F2F2F2;
-    padding: 20px !important ;
-}
 
 /* ==========================================================================
    Contact Section
@@ -699,6 +696,54 @@ a:after {
     background-image:-moz-linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
     background-image:-webkit-linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
     }
+
+
+/* ==========================================================================
+   STATIC_PAGES / SERVICES
+   ========================================================================== */
+
+#service_head {
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#service_head .bs-example.bs-example-tabs {
+    background: rgb(207, 212, 213); 
+    padding-top:3%;
+}
+
+#service_content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#service_content .bs-example.bs-example-tabs {
+    background: yellow;
+    background: #E2E2F1;
+}
+#service_content .container {
+    width: auto;
+    text-align: justify;
+}
+
+#service_head #service_link:hover {
+    -webkit-transform: scale(1.07,1.07);
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.07,1.07);
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-duration: 500ms;
+    position: relative;
+    z-index: 99;
+    overflow: hidden; ;
+}
+
+
+
+#training .row {
+    text-align: center;
+}
 
 /* ==========================================================================
    MEDIA QUERIES

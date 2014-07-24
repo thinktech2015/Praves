@@ -64,7 +64,7 @@ Author: http://www.toddmotto.com
 }
 #contact-form label span {
 	cursor:pointer;
-	color:#0E1ECE;
+	color:#2A410E;
 	display:block;
 	margin:5px 0;
 	font-weight:900;
@@ -105,18 +105,18 @@ Author: http://www.toddmotto.com
 	width:100%;
 	border:none;
 	background:#991D57;
-	background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-	background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-	background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	background-image:linear-gradient(bottom, #66575E 0%, #47383F 52%);
+	background-image:-moz-linear-gradient(bottom, #66575E 0%, #47383F 52%);
+	background-image:-webkit-linear-gradient(bottom, #66575E 0%, #47383F 52%);
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
 	border-radius:5px;
 }
-#contact-form button[type="submit"]:hover {
-	background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-	background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-	background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+#contact-form button[type="submit"]:hover { 
+	background-image:linear-gradient(bottom, #75686E 0%, #6F646A 52%);
+	background-image:-moz-linear-gradient(bottom, #75686E 0%, #6F646A 52%);
+	background-image:-webkit-linear-gradient(bottom, #75686E 0%, #6F646A 52%);
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
