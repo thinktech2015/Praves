@@ -62,6 +62,7 @@ body {
 
  img {
     vertical-align: middle;
+
 }
 
 /*
@@ -83,10 +84,10 @@ body {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #000000;
+    color: #313131;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -168,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     line-height: 25px;
     margin-bottom: 25px;
+
 }
 
 .centered {
@@ -626,6 +628,51 @@ a:after {
 
 
 /* ==========================================================================
+   Some Other Part Section
+   ========================================================================== */
+
+.back_effect {
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    text-align: center;    
+    border: .1em solid rgb(200, 200, 216);
+    color: blue;
+    background: rgba(44, 38, 38, 0.15);
+    padding-top:1.25em;
+    position: relative;
+    z-index: 1;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration:2s;
+    -o-transition-duration:2s;
+}
+
+
+#greywrap_link .back_effect:hover {
+ 
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background: #0098f9;
+    padding-top:1.25em;
+    box-shadow: 0 0 0 0.4em #fff, 0 0 0 0.5em #0098f9;
+    z-index: 1;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration:2s;
+    -o-transition-duration:2s;
+}
+
+/* ==========================================================================
    Register and Login section
    ========================================================================== */
 #navbar_logo {
@@ -633,9 +680,11 @@ a:after {
     margin-top: -0.20em;
     margin-right: 2em;*/
     margin: -0.20em 2em 0em -4em;
+    
 }
 
-#reg-id {
+
+/*#reg-id {
     margin-left: 70%;
     position: absolute;
 }
@@ -643,24 +692,14 @@ a:after {
 #login-id {
     margin-left: 77%;
     position: absolute;
-}
+}*/
 
 
 /* ==========================================================================
    Services main page section
    ========================================================================== */
 
-/*#greywrap #greywrap_link :hover {
--webkit-transform: scale(1.07,1.07);
-    -webkit-transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.07,1.07);
-    -moz-transition-timing-function: ease-in-out;
-    -moz-transition-duration: 500ms;
-    position: relative;
-    z-index: 99;
-    overflow: hidden; ;
-}*/
+
 
 
 /* ==========================================================================
@@ -697,6 +736,25 @@ a:after {
     background-image:-webkit-linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
     }
 
+#logo_fb img {
+    background: #000;
+    border-radius: 50%;
+}
+
+#logo_in img {
+    background: #000;
+    border-radius: 50%;
+}
+
+#logo_fb:hover img {
+    background: #0098f9;
+    border-radius: 50%;
+}
+
+#logo_in:hover img {
+    background: #0098f9;
+    border-radius: 50%;
+}
 
 /* ==========================================================================
    STATIC_PAGES / SERVICES
@@ -736,14 +794,15 @@ a:after {
     -moz-transition-duration: 500ms;
     position: relative;
     z-index: 99;
-    overflow: hidden; ;
+    overflow: hidden; 
 }
-
 
 
 #training .row {
     text-align: center;
 }
+
+
 
 /* ==========================================================================
    MEDIA QUERIES
@@ -769,4 +828,5 @@ a:after {
 		line-height: 38px;
 	}
 }
+
 
