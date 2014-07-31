@@ -15,22 +15,22 @@
             <span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span>
           </button>
           
-          <a id="navbar_logo" class="navbar-brand hidden-xs hidden-sm" href="/"><span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span></a>
+          <a id="navbar_logo" class="navbar-brand hidden-xs" href="/"><span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span></a>
         </div>
+
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">            
-			<li> <a href="#headerwrap" class="smoothScroll"> Home </a></li>
-			<li> <a href="#about" class="smoothScroll"> About </a></li>
-			<li> <a href="#services" class="smoothScroll"> Services </a></li>
-			<li> <a href="#technologies" class="smoothScroll"> Technologies </a></li>
-			<li> <a href="#clients" class="smoothScroll"> Clients </a></li>
-			<li> <a href="#career" class="smoothScroll"> Career </a></li>
-			<li> <a href="#industries" class="smoothScroll"> Industries </a></li>
-			<li> <a href="#contact" class="smoothScroll"> Contact </a></li>
+			<li> <a href="#headerwrap" class="smoothScroll" id="navbar_color1"> Home </a></li>
+			<li> <a href="#about" class="smoothScroll" id="navbar_color2"> About </a></li>
+			<li> <a href="#services" class="smoothScroll" id="navbar_color1"> Services </a></li>
+			<li> <a href="#technologies" class="smoothScroll" id="navbar_color2"> Technologies </a></li>
+			<li> <a href="#clients" class="smoothScroll" id="navbar_color1"> Clients </a></li>
+			<li> <a href="#career" class="smoothScroll" id="navbar_color2"> Career </a></li>
+			<li> <a href="#industries" class="smoothScroll" id="navbar_color1"> Industries </a></li>
+			<li> <a href="#contact" class="smoothScroll" id="navbar_color2"> Contact </a></li>
 
-			<li><a target="_blank" class="regular-link"  href="/static_pages/index" title="Next Section" style="
-    margin-left: 10em;"><span class="icon icon-lock"></span> <span class="text">Register</span></a></li>
-            <li><a target="_blank" class="regular-link"  href="/static_pages/index" title="Next Section"><span class="icon icon-user"></span> <span class="text">Log In</span></a></li>
+			<li><a target="_blank" class="regular-link" id="navbar_reg"  href="/static_pages/index" title="Next Section"><span class="icon icon-lock"></span> <span class="text">Register</span></a></li>
+            <li><a target="_blank" class="regular-link" id="navbar_log" href="/static_pages/index" title="Next Section"><span class="icon icon-user"></span> <span class="text">Log In</span></a></li>
         </ul>
         </div><!--/.nav-collapse -->
 
@@ -38,7 +38,14 @@
     </div>
     </div>
 
-  
+
+<!-- Close responsive navbar automatically -->
+  <script type="text/javascript">
+$('.navbar-collapse').click('li', function() {
+  $('.navbar-collapse').collapse('hide');
+});
+  </script>
+
   
 <!-- ==== HEADERWRAP  OR HOME ==== -->
 	    
@@ -47,7 +54,7 @@
                 <div class="row white">
                 	
 			<header class="clearfix">
-	  	<h1><span><br><a href = "/"><%= image_tag("logo.png",size:"283x104", alt: "logo", class: 'img-responsive') %></a></span></h1>
+	  <h1><span><br><a href = "/"><%= image_tag("logo.png",size:"283x104", alt: "logo", class: 'img-responsive') %></a></span></h1>
 
 	  		 		<p>Solutions for all kind of Businesses, any size, anywhere with Mobile App & Responsive Web Design.</p>
 	  		 		

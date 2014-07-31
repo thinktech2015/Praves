@@ -675,24 +675,19 @@ a:after {
 /* ==========================================================================
    Register and Login section
    ========================================================================== */
+
 #navbar_logo {
   /*margin-left: -4em;
     margin-top: -0.20em;
     margin-right: 2em;*/
-    margin: -0.20em 2em 0em -4em;
+    margin: -0.20em 0em 0em 0em;
     
 }
 
+#navbar_reg {
+        margin-left: 6em;
+    }
 
-/*#reg-id {
-    margin-left: 70%;
-    position: absolute;
-}
-
-#login-id {
-    margin-left: 77%;
-    position: absolute;
-}*/
 
 
 /* ==========================================================================
@@ -817,6 +812,47 @@ a:after {
 /*ipad portrait*/
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
 	.header{background-attachment: scroll;}
+
+/*#navbar_reg {
+        margin-left: -2em;
+    }*/
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+     #navbar_reg {
+        margin-left: -0.7em;
+    }
+    #navbar_logo {
+        margin: -0.20em 0em 0em -1em;
+    }
+    .navbar-nav {
+        float: left;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px)  {
+  
+    #navbar-main .navbar-nav a {
+      font-size: 12px;
+    }
+    #navbar-main .nav li a {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+    }
+
+    #navbar_reg {
+        margin-left: 0.5em;
+    }
+     #navbar_logo {
+        margin: -0.20em 0em 0em 0em;
+    }
+    .navbar-nav {
+        float: left;
+    }
 }
 
 @media screen and (max-width:769px) {
@@ -828,5 +864,24 @@ a:after {
 		line-height: 38px;
 	}
 }
+
+
+
+@media (max-width: 767px) {
+    #navbar_color1 {
+        background-color: #d3d3d3;
+    }
+    #navbar_color2 {
+        background-color: #222;
+    }
+     #navbar_reg {
+        background-color: #d3d3d3;
+        margin:0 auto;
+    }
+    #navbar_log {
+        background-color: #222;
+    }
+}
+
 
 
