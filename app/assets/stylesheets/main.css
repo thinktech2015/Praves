@@ -99,7 +99,7 @@ body {
 
 .row {
 margin-right: 0px;
-margin-left: -15px;
+margin-left: -3px;
 }
 
 .modal-header {
@@ -161,7 +161,7 @@ a img {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 700;
-    color: #000000;
+    color: #000000;    
 }
 
 
@@ -272,7 +272,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../assets/header_bg.jpg) no-repeat center top;
+	background: url(../assets/header_bg.png) no-repeat center top;
     margin-top: -65px;
     /*padding-top:120px;*/
     text-align:center;
@@ -712,6 +712,16 @@ a:after {
         margin-top: -0.3em;
     }
 
+#navbar_quote_collapse {
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+#myModal .modal-content {
+    width: 30em;
+}
+
+
 
 
 /* ==========================================================================
@@ -721,7 +731,9 @@ a:after {
 #client_carousel .carousel-control {
     width: 5%;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    opacity: .02;
+    opacity: 0.9;
+    background-image: none;
+    color: rgb(114, 114, 114);
 
 }
 #client_carousel .carousel {
@@ -858,7 +870,7 @@ a:after {
 @media (min-width: 992px) and (max-width: 1199px)  {
 
      #navbar_quote {
-        margin-left: 5em;
+        margin-left: 4em;
     }
     #navbar_logo {
         margin: -0.20em 0em 0em -1em;
@@ -881,7 +893,7 @@ a:after {
     }
 
     #navbar_quote {
-        margin-left: 2.5em;
+        margin-left: 1.9em;
     }
     #navbar_logo {
         margin: -0.20em 0em 0em 0em;

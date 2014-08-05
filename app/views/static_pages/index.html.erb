@@ -10,16 +10,48 @@
 						      <div class="modal-content">
 						        <div class="modal-header">
 						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Contact</h4>
+						          <h4 class="modal-title">Get a Quotation</h4>
 						        </div>
 						        <div class="modal-body">
-						          <p><img class="img-responsive" src="/assets/backup/contact1.jpg" alt=""></p>
-						          <p>Contact Details</p>
-						          <p><b><a href="/">Visit Us</a></b></p>
+	<div class="row">
+		<div class="col-lg-12">
+			<form  action="" method="POST" enctype="multipart/form-data" id="contact-form" >
+      			<div>
+        			<label>
+          			<span>Name: *</span>
+          			<input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" autofocus required >
+        			</label>
+      			</div>
+      			<div>
+        			<label>
+          			<span>Email: *</span>
+          			<input placeholder="Enter your email address" type="email" tabindex="2" id="contact_email" name="contact[email]"  required>
+        			</label>
+      			</div>
+      			<div>
+        			<label>
+          			<span>Mobile: * </span>
+          			<input placeholder="Enter your mobile number" type="tel" tabindex="3" pattern="[0-9]{10}" maxlength="10" id="contact_phone" name="contact[phone]" required>
+        			</label>
+      			</div>
+      			<div>
+        			<label>
+          			<span>Message:</span>
+          			<textarea placeholder="Include all the details you can" tabindex="4" name="contact[message]" id="contact_message" ></textarea>
+        			</label>
+      			</div>
+      			
+      			<div>
+        			<button tabindex="5" type="submit" name="submit" id="contact-submit" >Submit</button>
+      			</div>
+  			</form> 
+  		</div>
+  	</div>	
+						          
 						        </div>
-						        <div class="modal-footer">
+						        <!-- <div class="modal-footer">
 						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
+						        </div> -->
 						      </div>
 						 </div>
 				</div>
@@ -32,10 +64,16 @@
     	
       <div class="container">
         <div class="navbar-header">
+        	<div class="row">
+        	<div class="col-xs-2">
+        	<a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-sm hidden-md hidden-lg" id="navbar_quote_collapse"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a>
+        </div>
+        
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span>
           </button>
-          
+      
+          </div>
           <a id="navbar_logo" class="navbar-brand hidden-xs" href="/"><span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span></a>
         </div>
 
@@ -50,7 +88,7 @@
 			<li> <a href="#team" class="smoothScroll" id="navbar_color1"> Team </a></li>
 			<li> <a href="#contact" class="smoothScroll" id="navbar_color2"> Contact </a></li>
 			
-			<li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
+			<li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
 
 			
         </ul>
@@ -99,14 +137,14 @@ $('.navbar-collapse').click('li', function() {
 				<hr>
 			  <div class="col-lg-12 blog-content">
 				<div align="justify" class="col-lg-6">
-					<p>'PRAVES Technologies Ltd' is a Canada based company which provides services in SAP Consulting, Mobile App & Web Development, Software Testing and e-learning system development for businesses across the globe. We also have technical expertise in ‘Geographical Information Systems’ and ‘Data Analytics’. Our team of consultants and technologists always strive to achieve rational solutions to meet your business needs.”</p>
-				</div><!-- col-lg-6 -->
+					<p>We are a team of motivated individuals who care to build your business with you. We feel we can provide businesses with an opportunity to work in synergy with the latest technology. We take your business and put it out there on the web for the world to see, creating countless possibilities for expansion and great efficiency with which your business can operate.</p>
+				</div>
 				
 				<div align="justify" class="col-lg-6">
-					<p> We deliver corporate classroom training, online training as well as a ‘Technical Skill Upgrade’ program which is exclusively aimed at university students. We use innovative e-learning content and solutions, specifically designed to enhance effective learning. Our Mantra for growth is to deliver best of our knowledge and experience the right way, on time and on budget. We don’t believe in just building a software system for you, but strive to deliver you a solution after understanding your business problems and opportunities.</p>
-				</div><!-- col-lg-6 -->
+					<p> We help businesses understand the importance fast growing mobile technologies and how these technologies can work in favor of their business. We live by the philosophy of not building a business but a relationship with immense respect for the client and their business. We don’t believe in just building a software system for you, but strive to deliver you a solution after understanding your business problems and opportunities.</p>
+				</div>
 			  </div>
-		    </div><!-- row -->		
+		    </div>		
 		</div><!-- container -->
 		<!-- ==== SECTION DIVIDER1 -->
 		<section class="section-divider textdivider divider1" id="about_section_divider">
@@ -128,37 +166,37 @@ $('.navbar-collapse').click('li', function() {
 				<br>
 				<div id="greywrap">
 				<div class="row">
-				<div class="col-lg-4 callout" id="greywrap_link">
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="static_pages/services/#res_web_des"><i class="back_effect">
 					<%= image_tag("service_responsive_design.png",size:"80x60", alt: "Responsive Web Design" , class: 'img-responsive') %></i>
 					<h4>Responsive Web Design and Development</h4></a>
 				</div>
 					
-				<div class="col-lg-4 callout" id="greywrap_link">
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="static_pages/services#mobile"><i class="back_effect">
 					<%= image_tag("service_graphics.png",size:"60x60", alt: "Graphic Design" , class: 'img-responsive') %></i>
 					<h4>Graphic Design and Development</h4></a>
 				</div>
 				
-				<div class="col-lg-4 callout" id="greywrap_link">
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="#"><i class="back_effect">
 					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile App Development" , class: 'img-responsive') %></i>
 					<h4>Mobile App Development (iOS and Android)</h4></a>
 				</div>
 
-				<div class="col-lg-4 callout" id="greywrap_link">
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="#"><i class="back_effect">
 					<%= image_tag("service_software.png",size:"60x60", alt: "Software Development" , class: 'img-responsive') %></i>
 					<h4>Custom Software Development</h4></a>
 				</div>
 					
-				<div class="col-lg-4 callout" id="greywrap_link">
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="#"><i class="back_effect">
 					<%= image_tag("service_mobile_marketing.png",size:"60x60", alt: "Mobile Marketing" , class: 'img-responsive') %></i>
 					<h4>Mobile Marketing and Solutions</h4></a>
 				</div>
 				
-				<div class="col-lg-4 callout" id="greywrap_link">
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="#"><i class="back_effect">
 					<%= image_tag("service_webapp.png",size:"60x60", alt: "Web App Development" , class: 'img-responsive') %></i>
 					<h4>WebApp Development</h4></a><br>
@@ -197,25 +235,25 @@ $('.navbar-collapse').click('li', function() {
 				<br>
 				<div id="greywrap">
 				<div class="row">
-				<div class="col-lg-3 callout" id="greywrap_link1">
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
 					<i class="back_effect">
 					<%= image_tag("techno_windows_ iphone_android.png",size:"60x60", alt: "Mobile-App" , class: 'img-responsive') %></i>
 					<h3>Mobile:</h3><h5> iOS and Android</h5>
 				</div>
 					
-				<div class="col-lg-3 callout" id="greywrap_link1">
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
 					<i class="back_effect">
 					<%= image_tag("techno_cloud.png",size:"60x60", alt: "Cloud Platforms" , class: 'img-responsive') %></i>
 					<h3>Cloud Platforms:</h3><h5> Google Cloud, Amazon Web Services, Windows Azure and more</h5>
 				</div>
 				
-				<div class="col-lg-3 callout" id="greywrap_link1">
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
 					<i class="back_effect">
 					<%= image_tag("techno_web-tech.png",size:"60x60", alt: "Web Technologies" , class: 'img-responsive') %></i>
 					<h3>Web Technologies: </h3><h5>HTML5, CSS3, PHP Framework, NodeJS, Microsoft ,NET</h5>
 				</div>
 
-				<div class="col-lg-3 callout" id="greywrap_link1">
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
 					<i class="back_effect">
 					<%= image_tag("techno_web_cms.png",size:"60x60", alt: "Web CSM" , class: 'img-responsive') %></i>
 					<h3>Web CMS:</h3><h5> Wordpress, Joomla, Drupal</h5>
@@ -276,17 +314,17 @@ $('.navbar-collapse').click('li', function() {
      
     <div class="item">
         <div class="row-fluid">
-        <div class="col-sm-3 col-md-3 col-lg-3 centered">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
           <a href="http://www.spiriteinfosystem.com/" target="_blank"><%= image_tag("clientlogo1.jpg", size: "160x120", alt: "SPIRITE INFOSYSTEM", class: 'img img-responsive') %><h5><b>SPIRITE INFOSYSTEM</b></h5></a>
         </div>       
 
-          <div class="col-sm-3 col-md-3 col-lg-3 centered">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
           <a href="http://www.westworks.ca/" target="_blank"><%= image_tag("clientlogo2.jpg", size: "160x120", alt: "WEST WORKS", class: 'img img-responsive') %><h5><b>WEST WORKS</b></h5></a>
         </div>
-        <div class="col-sm-3 col-md-3 col-lg-3 centered">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
           <a href="http://www.motileplus.com/" target="_blank"><%= image_tag("clientlogo3.jpg", size: "160x120", alt: "MOTILE PLUS", class: 'img img-responsive') %><h5><b>MOTILE PLUS</b></h5></a>
         </div>
-        <div class="col-sm-3 col-md-3 col-lg-3 centered">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
           <a href="http://www.altimetrik.com/" target="_blank"><%= image_tag("clientlogo4.png", size: "160x120", alt: "ALTIMETRIK", class: 'img img-responsive') %><h5><b>ALTIMETRIK</b></h5></a>
         </div>
 
@@ -332,9 +370,9 @@ $('.navbar-collapse').click('li', function() {
 			<div class="row">
 				
 				
-				<div class="col-lg-12 blog-content">
+				<div class="col-sm-12 col-lg-12 blog-content">
 
-					<div class="col-lg-9">					
+					<div class="col-sm-9 col-lg-9">					
 
                        <H2>Working at PRAVES</H2>
                        <P>Praves Technologies builds strong relations with employees based on mutual trust and respect. Our strength lies in our highly skilled and motivated work force. We look forward to have people with talent, inspiration and sense of adventure for taking themselves and lead to company growth as well.
@@ -345,10 +383,10 @@ $('.navbar-collapse').click('li', function() {
 					<div class="col-lg-1">
 
 					</div>
-					<div class="col-lg-2">
+					<div class="col-sm-3 col-lg-2">
 					<br>	
-						<h4><a href="/static_pages/career" target="_blank"><button type="button"  class="btn btn-info regular-link" ><span ></span> <span class="text">Join Our Organization</span></button></a></h4>
-						<h4><a href="/static_pages/career" target="_blank"><button type="button" target="_blank" class="btn btn-info regular-link" ><span ></span> <span class="text">Current Jobs</span></button></a></h4>
+						<h4><a href="#" target="_blank"><button type="button"  class="btn btn-info regular-link" ><span ></span> <span class="text">Join Our Organization</span></button></a></h4>
+						<h4><a href="#" target="_blank"><button type="button" target="_blank" class="btn btn-info regular-link" ><span ></span> <span class="text">Current Jobs</span></button></a></h4>
 						
 						
 						
@@ -378,7 +416,8 @@ $('.navbar-collapse').click('li', function() {
 				<hr>
 				<br>
 				<br>
-				<div class="col-lg-3 centered">
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<!-- <div class="col-lg-3 centered">
 					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
 					<br>
 					<h4><b>Mike Arney</b></h4>
@@ -386,7 +425,7 @@ $('.navbar-collapse').click('li', function() {
 					<a href="#" class="icon icon-facebook"></a>
 					<a href="#" class="icon icon-flickr"></a>
 					<p>Mike combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
-				</div><!-- col-lg-3 -->
+				</div>
 				
 				<div class="col-lg-3 centered">
 					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
@@ -396,7 +435,7 @@ $('.navbar-collapse').click('li', function() {
 					<a href="#" class="icon icon-facebook"></a>
 					<a href="#" class="icon icon-flickr"></a>
 					<p>Tim is an experienced marcoms practitioner and manages projects from inception to delivery. He understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
-				</div><!-- col-lg-3 -->
+				</div>
 				
 				<div class="col-lg-3 centered">
 					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
@@ -406,7 +445,7 @@ $('.navbar-collapse').click('li', function() {
 					<a href="#" class="icon icon-facebook"></a>
 					<a href="#" class="icon icon-flickr"></a>
 					<p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
-				</div><!-- col-lg-3 -->
+				</div>
 				
 				<div class="col-lg-3 centered">
 					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
@@ -416,7 +455,7 @@ $('.navbar-collapse').click('li', function() {
 					<a href="#" class="icon icon-facebook"></a>
 					<a href="#" class="icon icon-flickr"></a>
 					<p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
-				</div><!-- col-lg-3 -->
+				</div> -->
 				
 			</div><!-- row -->
 		</div><!-- container -->
