@@ -85,7 +85,7 @@
 			<li> <a href="#technologies" class="smoothScroll" id="navbar_color2"> Technologies </a></li>
 			<li> <a href="#clients" class="smoothScroll" id="navbar_color1"> Clients </a></li>
 			<li> <a href="#career" class="smoothScroll" id="navbar_color2"> Career </a></li>
-			<li> <a href="#team" class="smoothScroll" id="navbar_color1"> Team </a></li>
+			<!-- <li> <a href="#team" class="smoothScroll" id="navbar_color1"> Team </a></li> -->
 			<li> <a href="#contact" class="smoothScroll" id="navbar_color2"> Contact </a></li>
 			
 			<li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
@@ -167,11 +167,28 @@ $('.navbar-collapse').click('li', function() {
 				<div id="greywrap">
 				<div class="row">
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="#"><i class="back_effect">
+					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile App Development" , class: 'img-responsive') %></i>
+					<h4>Mobile App Development (iOS and Android)</h4></a>
+				</div>
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="static_pages/services/#res_web_des"><i class="back_effect">
 					<%= image_tag("service_responsive_design.png",size:"80x60", alt: "Responsive Web Design" , class: 'img-responsive') %></i>
 					<h4>Responsive Web Design and Development</h4></a>
 				</div>
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="#"><i class="back_effect">
+					<%= image_tag("service_mobile_marketing.png",size:"60x60", alt: "Mobile Marketing" , class: 'img-responsive') %></i>
+					<h4>Mobile Marketing and Solutions</h4></a><br>
+				</div>		
+
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="#"><i class="back_effect">
+					<%= image_tag("service_software.png",size:"60x60", alt: "Software Development" , class: 'img-responsive') %></i>
+					<h4>Custom Software Development</h4></a>
+				</div>
 					
+				
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="static_pages/services#mobile"><i class="back_effect">
 					<%= image_tag("service_graphics.png",size:"60x60", alt: "Graphic Design" , class: 'img-responsive') %></i>
@@ -180,26 +197,8 @@ $('.navbar-collapse').click('li', function() {
 				
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
 					<a href="#"><i class="back_effect">
-					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile App Development" , class: 'img-responsive') %></i>
-					<h4>Mobile App Development (iOS and Android)</h4></a>
-				</div>
-
-				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="#"><i class="back_effect">
-					<%= image_tag("service_software.png",size:"60x60", alt: "Software Development" , class: 'img-responsive') %></i>
-					<h4>Custom Software Development</h4></a>
-				</div>
-					
-				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="#"><i class="back_effect">
-					<%= image_tag("service_mobile_marketing.png",size:"60x60", alt: "Mobile Marketing" , class: 'img-responsive') %></i>
-					<h4>Mobile Marketing and Solutions</h4></a>
-				</div>
-				
-				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="#"><i class="back_effect">
 					<%= image_tag("service_webapp.png",size:"60x60", alt: "Web App Development" , class: 'img-responsive') %></i>
-					<h4>WebApp Development</h4></a><br>
+					<h4>WebApp Development</h4></a>
 				</div>
 			</div>
 			</div>
@@ -409,7 +408,7 @@ $('.navbar-collapse').click('li', function() {
 		
 
 <!-- ==== TEAM ==== -->
-		<div class="container" id="team" name="team">
+		<!-- <div class="container" id="team" name="team">
 		<br><br>
 			<div class="row white centered">
 				<h1 class="centered">HERE IS OUR TEAM</h1>
@@ -417,7 +416,7 @@ $('.navbar-collapse').click('li', function() {
 				<br>
 				<br>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-				<!-- <div class="col-lg-3 centered">
+				<div class="col-lg-3 centered">
 					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
 					<br>
 					<h4><b>Mike Arney</b></h4>
@@ -455,19 +454,18 @@ $('.navbar-collapse').click('li', function() {
 					<a href="#" class="icon icon-facebook"></a>
 					<a href="#" class="icon icon-flickr"></a>
 					<p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
-				</div> -->
+				</div>
 				
-			</div><!-- row -->
-		</div><!-- container -->
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div> -->
 			
 			
-			<br>
-			<br>
-			<br>
-			<br>
+			
 		
-		
-	         </div><!-- /container -->
 		
 
 <!-- ==== CONTACT ==== -->
