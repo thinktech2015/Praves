@@ -272,7 +272,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../assets/header_bg.png) no-repeat center top;
+	background: url(../assets/header_background.jpg) no-repeat center top;
     margin-top: -65px;
     /*padding-top:120px;*/
     text-align:center;
@@ -930,6 +930,56 @@ a:after {
         background-color: #222;
     }
 }
+
+
+
+
+#div_full {
+    position: absolute;
+   
+}
+
+#div_full h4, h5 {
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+#div_first {
+    position: absolute;
+    text-align: justify;
+    margin-left:23em;
+    margin-top:0.5em; 
+    width:14em; 
+
+}
+
+#div_second {
+    position: absolute;
+    text-align: justify;
+    margin-left:43em; 
+    margin-top:0.5em; 
+    width:14em; 
+}
+
+#div_third {
+    position: absolute;
+    text-align: justify;
+    margin-left:64em; 
+    margin-top:0.5em; 
+    width:17em;
+}
+#h4 a:active {
+    color: blue;
+}
+#div_third a :hover {
+    color: red;
+}
+/* #div_third a > h4 >h5 :hover {
+    color: red;
+
+}*/
+
 
 
 
