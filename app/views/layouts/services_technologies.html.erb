@@ -38,14 +38,117 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+<!-- <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
   <div class="nav navbar-nav">
-<!--  <a href = "/" class = "header_logo pull-left"><%= image_tag("logo.png",size:"283x100", alt: "logo") %></a> -->
+
 
  <a id="navbar_logo" class="navbar-brand" href="/"><span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span></a>
   <div style="margin-left: 1055px; padding-top:0.3cm;"> <a href="/" class="btn btn-primary active">Home</a></div>
 </div></div></div>
+ -->
+
+<!-- ==== MODAL ==== -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Get a Quotation</h4>
+                    </div>
+                    <div class="modal-body">
+  <div class="row">
+    <div class="col-lg-12">
+      <form  action="" method="POST" enctype="multipart/form-data" id="contact-form" >
+            <div>
+              <label>
+                <span>Name: *</span>
+                <input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" autofocus required >
+              </label>
+            </div>
+            <div>
+              <label>
+                <span>Email: *</span>
+                <input placeholder="Enter your email address" type="email" tabindex="2" id="contact_email" name="contact[email]"  required>
+              </label>
+            </div>
+            <div>
+              <label>
+                <span>Mobile: * </span>
+                <input placeholder="Enter your mobile number" type="tel" tabindex="3" pattern="[0-9]{10}" maxlength="10" id="contact_phone" name="contact[phone]" required>
+              </label>
+            </div>
+            <div>
+              <label>
+                <span>Message:</span>
+                <textarea placeholder="Include all the details you can" tabindex="4" name="contact[message]" id="contact_message" ></textarea>
+              </label>
+            </div>
+            
+            <div>
+              <button tabindex="5" type="submit" name="submit" id="contact-submit" >Submit</button>
+            </div>
+        </form> 
+      </div>
+    </div>  
+                      
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div> -->
+                  </div>
+             </div>
+        </div>
+  
+<!-- ==== NAVBAR ==== --> 
+
+<div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      
+      <div class="container">
+        <div class="navbar-header">
+          <div class="row">
+          <div class="col-xs-2">
+          <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-sm hidden-md hidden-lg" id="navbar_quote_collapse"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a>
+        </div>
+        
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span>
+          </button>
+      
+          </div>
+          <a id="navbar_logo" class="navbar-brand hidden-xs" href="/"><span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">            
+      <li> <a href="/#headerwrap" class="smoothScroll" id="navbar_color1" target="_blank"> Home </a></li>
+      <li> <a href="/#about" class="smoothScroll" id="navbar_color2" target="_blank"> About </a></li>
+      <li> <a href="/#services" class="smoothScroll" id="navbar_color1" target="_blank"> Services </a></li>
+      <li> <a href="/#technologies" class="smoothScroll" id="navbar_color2" target="_blank"> Technologies </a></li>
+      <li> <a href="/#clients" class="smoothScroll" id="navbar_color1" target="_blank"> Clients </a></li>
+      <li> <a href="/#career" class="smoothScroll" id="navbar_color2" target="_blank"> Career </a></li>
+ <!-- <li> <a href="/#team" class="smoothScroll" id="navbar_color1" target="_blank"> Team </a></li> -->
+      <li> <a href="/#contact" class="smoothScroll" id="navbar_color2" target="_blank"> Contact </a></li>
+      
+      <li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
+
+      
+        </ul>
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </div>
+    </div>
+
+
+<!-- === Close responsive navbar automatically ==== -->
+  <script type="text/javascript">
+$('.navbar-collapse').click('li', function() {
+  $('.navbar-collapse').collapse('hide');
+});
+  </script>
 
 
 <%= yield %>

@@ -420,33 +420,73 @@ a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../assets/bg/divider1.jpg')
+	background-image: url('../assets/bg/divider1.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 .divider2 {
-	background-image: url('../assets/bg/divider2.jpg')
+	background-image: url('../assets/bg/divider2.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 .divider3 {
-    background-image: url('../assets/bg/divider3.jpg')
+    background-image: url('../assets/bg/divider3.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 .divider4 {
-    background-image: url('../assets/bg/divider4.jpg')
+    background-image: url('../assets/bg/divider4.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 .divider5 {
 	background-image: url('../assets/bg/divider5.jpg');
 	margin-top: 0px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 .divider6 {
 	background-image: url('../assets/bg/divider6.jpg')
 }
 .divider7 {
-    background-image: url('../assets/bg/divider7.jpg')
+    background-image: url('../assets/bg/divider7.jpg');    
 }
 
 .divider8 {
-	background-image: url('../assets/bg/divider8.jpg')
+	background-image: url('../assets/bg/divider8.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+
+.divider_service {
+    background-image: url('../assets/bg/divider_service.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -799,7 +839,7 @@ a:after {
    ========================================================================== */
 
 #service_head {
-    padding-top: 7%;
+    padding-top: 12%;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -808,10 +848,7 @@ a:after {
     margin-left: 0px;
 }
 
-#service_head .bs-example.bs-example-tabs {
-    background: rgb(207, 212, 213); 
-    padding-top:3%;
-}
+
 
 #service_content {
     padding-left: 10%;
@@ -934,51 +971,6 @@ a:after {
 
 
 
-#div_full {
-    position: absolute;
-   
-}
-
-#div_full h4, h5 {
-    color: #ffffff;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-#div_first {
-    position: absolute;
-    text-align: justify;
-    margin-left:23em;
-    margin-top:0.5em; 
-    width:14em; 
-
-}
-
-#div_second {
-    position: absolute;
-    text-align: justify;
-    margin-left:43em; 
-    margin-top:0.5em; 
-    width:14em; 
-}
-
-#div_third {
-    position: absolute;
-    text-align: justify;
-    margin-left:64em; 
-    margin-top:0.5em; 
-    width:17em;
-}
-#h4 a:active {
-    color: blue;
-}
-#div_third a :hover {
-    color: red;
-}
-/* #div_third a > h4 >h5 :hover {
-    color: red;
-
-}*/
 
 
 
