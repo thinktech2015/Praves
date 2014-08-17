@@ -79,7 +79,7 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">            
-			<li> <a href="#headerwrap" class="smoothScroll" id="navbar_color1"> Home </a></li>
+			<li> <a href="#home" class="smoothScroll" id="navbar_color1"> Home </a></li>
 			<li> <a href="#about" class="smoothScroll" id="navbar_color2"> About </a></li>
 			<li> <a href="#services" class="smoothScroll" id="navbar_color1"> Services </a></li>
 			<li> <a href="#technologies" class="smoothScroll" id="navbar_color2"> Technologies </a></li>
@@ -107,13 +107,53 @@ $('.navbar-collapse').click('li', function() {
   </script>
 
 
-
-
 <!-- ==== HEADERWRAP  OR HOME ==== -->
+
+ <div id="home" name="home"> 
+
+<div id="home_carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+    	<div id="h_bg">
+      <img src="/assets/home_bg1.png" alt="..." width="100%" height="615px">
+      <div class="carousel-caption">
+        ...
+      </div>
+  </div>
+    </div>
+    <div class="item">
+    	<div id="h_bg">
+      <img src="/assets/home_bg2.jpg" alt="..." width="100%" height="615px">
+      <div class="carousel-caption">
+        ...
+      </div>
+  </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+<!-- Carousel end -->
+</div>
 	    
-	        <div class="container" id="headerwrap" name="headerwrap">
-               
-                <div class="row white">
+	        <!-- <div class="container" id="headerwrap" name="headerwrap">               
                 	
 			<header class="clearfix">
 	  <h1><span><br><a href = "/"><%= image_tag("logo.png",size:"283x104", alt: "logo", class: 'img-responsive') %></a></span></h1>
@@ -122,8 +162,8 @@ $('.navbar-collapse').click('li', function() {
 	  		 		
 	  		</header>
 	  		        
-	  		    </div>   
-	        </div>
+	  		      
+	        </div> -->
 	    
 
 		
@@ -133,7 +173,7 @@ $('.navbar-collapse').click('li', function() {
 		<div class="container" id="about" name="about">
 		    <div class="row white">
 			  <br><br>
-				<h1 class="centered">A LITTLE ABOUT US</h1>
+				<h2 class="centered">A LITTLE ABOUT US</h2>
 				<hr>
 			  <div class="col-lg-12 blog-content">
 				<div align="justify" class="col-lg-6">
@@ -217,11 +257,11 @@ $('.navbar-collapse').click('li', function() {
 		</div><!-- container -->
 		<!-- ==== SECTION DIVIDER2 -->
 		 <section class="img-responsive section-divider textdivider divider2">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<h1>WE ARE HERE TO PROVIDE EXPERTISE</h1>
 				<hr><br>
 				<p><b>We don’t believe in just building a software system, but we strive to deliver you a solution.</b></p>
-			</div>
+			<!-- </div> -->
 		</section> <!-- section -->
 		
 
@@ -265,11 +305,11 @@ $('.navbar-collapse').click('li', function() {
      </div><!-- container -->
      <!-- ==== SECTION DIVIDER3 -->
 		 <section class="section-divider textdivider divider3">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<h1>INNOVATIVE TECHNOLOGY SOLUTIONS</h1>
 				<hr>
 				<p><b>You can rely on us for high quality of deliverable and successful implementation.</b></p>
-			</div>
+			<!-- </div> -->
 		</section> <!-- section -->
 
 <!-- ==== CLIENTS ==== -->
@@ -277,7 +317,7 @@ $('.navbar-collapse').click('li', function() {
 			
 			<br><br>
 			<div class="row white centered">
-				<h1 class="centered">MEET OUR AWESOME CLIENTS</h1>
+				<h2 class="centered">MEET OUR AWESOME CLIENTS</h2>
 				<hr>
 				<br>
 								
@@ -373,7 +413,7 @@ $('.navbar-collapse').click('li', function() {
 
 					<div class="col-sm-9 col-lg-9">					
 
-                       <H2>Working at PRAVES</H2>
+                       <h3>Working at PRAVES</h3>
                        <P>Praves Technologies builds strong relations with employees based on mutual trust and respect. Our strength lies in our highly skilled and motivated work force. We look forward to have people with talent, inspiration and sense of adventure for taking themselves and lead to company growth as well.
                        </P>
 											<!-- <p><a href="#" class="icon icon-link"> Read More</a></p> -->
@@ -411,7 +451,7 @@ $('.navbar-collapse').click('li', function() {
 		<!-- <div class="container" id="team" name="team">
 		<br><br>
 			<div class="row white centered">
-				<h1 class="centered">HERE IS OUR TEAM</h1>
+				<h2 class="centered">HERE IS OUR TEAM</h2>
 				<hr>
 				<br>
 				<br>
@@ -473,11 +513,11 @@ $('.navbar-collapse').click('li', function() {
 		<div class="container" id="contact" name="contact">
 			<div class="row">
 			<br><br><br>
-				<h1 class="centered">THANKS FOR VISITING US</h1>
+				<h2 class="centered">THANKS FOR VISITING US</h2>
 				<hr>
-				<div class="col-lg-1">
+				<div class="col-lg-1 col-sm-1">
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
 					<h4>Contact Information</h4>
 					<p>
 					<span class="icon icon-home"></span><b>Address</b><br>
@@ -495,10 +535,10 @@ $('.navbar-collapse').click('li', function() {
 					</p>
 				</div><!-- col -->
 				
-				<div class="col-lg-1">
+				<div class="col-lg-1 col-sm-1">
 				</div>
 				
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-sm-6">
 					<h4>Our Location</h4>
 					<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1254.1610603064853!2d-114.0692075!3d51.0471397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ba24dbae70547bd!2sPRAVES+Technologies+Ltd.!5e0!3m2!1sen!2sin!4v1406119267342" width="400" height="300" frameborder="0" style="border:0"></iframe></p>
 				</div><!-- col -->
