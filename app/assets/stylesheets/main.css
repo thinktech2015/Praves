@@ -406,7 +406,7 @@ a:after {
 .section-divider {
     z-index: 999;
     width: 100%;
-    display: table;
+    display: block;
     max-height: 450px;
     /*border-bottom: 2px solid #E6EAED;*/
     -webkit-box-sizing: border-box;
@@ -698,6 +698,15 @@ a:after {
 	background: #f2f2f2;
 }
 
+.head-bg {
+    background: #E2E2F1;
+    text-align: center;
+}
+
+.head-bg1 {
+    background: #E2E2F1;
+    border-radius: 5px;
+}
 
 /* ==========================================================================
    Some Other Part Section
@@ -790,7 +799,7 @@ a:after {
 }
 
 #myModal .modal-content {
-    width: 30em;
+    width: 80%;
 }
 
 
@@ -819,7 +828,6 @@ a:after {
 /* ==========================================================================
    Career Section
    ========================================================================== */
-
 
 
 /* ==========================================================================
@@ -913,6 +921,13 @@ a:after {
     text-align: center;
 }
 
+/* ==========================================================================
+   STATIC_PAGES / CAREER
+   ========================================================================== */
+   #form_id {
+    padding-top: 1em;
+    padding-bottom: 1em;
+   }
 
 
 /* ==========================================================================
@@ -994,7 +1009,7 @@ a:after {
 
 /* ===== Font ===== */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   h1 {
     font-size: 26px;
   }
@@ -1019,8 +1034,36 @@ a:after {
         font-size: 25px;
         line-height: 35px;
     }
+}
+
+@media screen and (max-width: 319px) {
+ 
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+   
+  p {
+    font-size: 14px;
+  }
 
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 991px ) {
 
@@ -1049,7 +1092,7 @@ a:after {
 }
 
 
-@media screen and (max-width: 540px ) {
+@media screen and (min-width: 320px) and (max-width: 540px ) {
 
     .textdivider h1 {
         /*padding-top: 30px;*/        
@@ -1058,9 +1101,13 @@ a:after {
     .textdivider p {        
         font-size: 12px;
 }
-
 }
 
+@media screen and (max-width: 319px ) {
+    .textdivider h1 {        
+        font-size: 12px;
+}
+}
 
 /* ===== Font End ===== */
 
@@ -1073,6 +1120,7 @@ a:after {
     padding-bottom: 30px;
 }
 }
+
 @media screen and (min-width: 541px) and (max-width: 767px) {
     
 .section-divider {
@@ -1081,4 +1129,116 @@ a:after {
     margin-top: 1em;
 }
 }
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    
+.section-divider {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 5px;
+}
+
+hr {
+     margin: 0.1em 0;
+}
+
+.textdivider h1 {
+    padding-top: 20px;
+}
+}
+
+@media screen and (max-width: 319px) {
+
+.section-divider {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -30px;
+}
+
+hr {
+     height: 0px;
+     margin: 0.1em 0;
+}
+
+.textdivider h1 {
+    padding-top: 20px;
+
+}
+h3 {
+    margin-bottom: -1px;
+}
+}
+
+
+
+/* ===== Section Dividers End ===== */
+/* ===== iFrame ===== */
+
+@media screen and (min-width: 768px) and (max-width: 888px) {
+
+iframe {
+    width: 300px;
+    height: 250px;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+
+iframe {
+    width: 270px;
+    height: 200px;
+}
+}
+
+@media screen and (max-width: 319px) {
+
+iframe {
+    width: 215px;
+    height: 200px;
+}
+}
+
+/* ===== iFrame End ===== */
+
+/* ===== Modal ===== */
+
+@media screen and (max-width: 767px ) {
+#myModal .modal-content {
+    width: 65%;
+}
+}
+
+/* ===== Modal End ===== */
+
+
+
+
+
+
+
+
+/* ===== Static_Pages/Career ===== */
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+#service_head {
+    padding-top: 30%;
+}
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+#service_head {
+    padding-top: 25%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+#service_head {
+    padding-top: 18%;
+}
+}
+
+/* ===== Static_Pages/Career End ===== */
+
+
+
 
