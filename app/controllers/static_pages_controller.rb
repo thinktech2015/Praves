@@ -12,5 +12,9 @@ class StaticPagesController < ApplicationController
   def career
   	 render :layout => 'services_technologies' 	
   end
+
+  def quote
+  	render :layout => 'services_technologies'   	
+  end
   
 end

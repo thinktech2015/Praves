@@ -347,6 +347,13 @@ a:after {
     
 }
 
+#h_bg .carousel-caption {
+    padding-bottom: 26%;
+}
+
+#carou_cap2 .carousel-caption {
+    padding-bottom: 15px;
+}
 
 #greywrap {
     background: #f5f5f5;

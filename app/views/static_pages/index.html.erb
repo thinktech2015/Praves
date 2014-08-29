@@ -80,8 +80,9 @@
 			<li> <a href="#career" class="smoothScroll" id="navbar_color2"> Career </a></li>
 			<!-- <li> <a href="#team" class="smoothScroll" id="navbar_color1"> Team </a></li> -->
 			<li> <a href="#contact" class="smoothScroll" id="navbar_color2"> Contact </a></li>
+			<li> <a href="/quote"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
 			
-			<li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
+			<!-- <li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li> -->
 
 			
         </ul>
@@ -110,6 +111,8 @@ $('.navbar-collapse').click('li', function() {
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
     
   </ol>
 
@@ -117,13 +120,35 @@ $('.navbar-collapse').click('li', function() {
   <div class="carousel-inner">
     <div class="item active">
     	<div id="h_bg">
-      <img class="img-responsive" src="/assets/home_bg1.jpg" alt="Background" width="100%" height="615px">
-  </div>
+    		<div class="carousel-caption">
+    			<div class="col-sm-12 callout">
+          			<img class="img-responsive" src="/assets/logo.png" alt="logo">
+          			<h2>Mobile Apps And Web Development</h2>
+        		</div>
+        	</div>
+      				<img class="img-responsive" src="/assets/home_bg1.jpg" alt="Background" width="100%" height="615px">      
+  		</div>
+    </div>
+    <div class="item" id="carou_cap2">
+    	<div id="h_bg">
+    		<div class="carousel-caption">
+    			<div class="col-sm-12 callout">
+          			<h2>Responsive Web Design</h2>
+        		</div>
+        	</div>
+      				<img class="img-responsive" src="/assets/home_bg2.jpg" alt="Background" width="100%" height="615px">      
+  		</div>
+    </div>
+
+    <div class="item">
+    	<div id="h_bg">
+      <img class="img-responsive" src="/assets/home_bg3.jpg" alt="Background" width="100%" height="615px">
+  		</div>
     </div>
     <div class="item">
     	<div id="h_bg">
-      <img class="img-responsive" src="/assets/home_bg2.jpg" alt="Background" width="100%" height="615px">
-  </div>
+      <img class="img-responsive" src="/assets/home_bg4.jpg" alt="Background" width="100%" height="615px">
+  		</div>
     </div>
     
   </div>
@@ -189,36 +214,36 @@ $('.navbar-collapse').click('li', function() {
 				<div id="greywrap">
 				<div class="row">
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="/static_pages/services/#mobile_app"><i class="back_effect">
+					<a href="/services/#mobile_app"><i class="back_effect">
 					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile App Development" , class: 'img-responsive') %></i>
 					<h4>Mobile App Development (iOS and Android)</h4></a>
 				</div>
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="/static_pages/services/#res_web_des"><i class="back_effect">
+					<a href="/services/#res_web_des"><i class="back_effect">
 					<%= image_tag("service_responsive_design.png",size:"80x60", alt: "Responsive Web Design" , class: 'img-responsive') %></i>
 					<h4>Responsive Web Design and Development</h4></a>
 				</div>
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="/static_pages/services/#mobile_market"><i class="back_effect">
+					<a href="/services/#mobile_market"><i class="back_effect">
 					<%= image_tag("service_mobile_marketing.png",size:"60x60", alt: "Mobile Marketing" , class: 'img-responsive') %></i>
 					<h4>Mobile Marketing and Solutions</h4></a><br>
 				</div>		
 
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="/static_pages/services/#software"><i class="back_effect">
+					<a href="/services/#software"><i class="back_effect">
 					<%= image_tag("service_software.png",size:"60x60", alt: "Software Development" , class: 'img-responsive') %></i>
 					<h4>Custom Software Development</h4></a>
 				</div>
 					
 				
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="/static_pages/services#graphic_des"><i class="back_effect">
+					<a href="/services#graphic_des"><i class="back_effect">
 					<%= image_tag("service_graphics.png",size:"60x60", alt: "Graphic Design" , class: 'img-responsive') %></i>
 					<h4>Graphic Design and Development</h4></a>
 				</div>
 				
 				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
-					<a href="/static_pages/services/#web_app"><i class="back_effect">
+					<a href="/services/#web_app"><i class="back_effect">
 					<%= image_tag("service_webapp.png",size:"60x60", alt: "Web App Development" , class: 'img-responsive') %></i>
 					<h4>WebApp Development</h4></a>
 				</div>
@@ -388,8 +413,8 @@ $('.navbar-collapse').click('li', function() {
 					</div>
 					<div class="col-sm-3 col-lg-2">
 					<br>	
-						<h4><a href="/static_pages/career"><button type="button"  class="btn btn-info btn-block regular-link" > <span class="text">Join Our Organization</span></button></a></h4>
-						<h4><a href="/static_pages/career"><button type="button"  class="btn btn-info btn-block regular-link" > <span class="text">Current Jobs</span></button></a></h4>
+						<h4><a href="/career"><button type="button"  class="btn btn-info btn-block regular-link" > <span class="text">Join Our Organization</span></button></a></h4>
+						<h4><a href="/career"><button type="button"  class="btn btn-info btn-block regular-link" > <span class="text">Current Jobs</span></button></a></h4>
 						
 						
 					</div>
