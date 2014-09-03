@@ -59,7 +59,9 @@
         <div class="navbar-header">
         	<div class="row">
         	<div class="col-xs-2">
-        	<a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-sm hidden-md hidden-lg" id="navbar_quote_collapse"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a>
+        		<a href="/quote"><button type="button"  class=" btn btn-primary hidden-sm hidden-md hidden-lg" id="navbar_quote_collapse"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a>
+
+        	<!-- <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-sm hidden-md hidden-lg" id="navbar_quote_collapse"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a> -->
         </div>
         
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -83,11 +85,9 @@
 			<li> <a href="/quote"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
 			
 			<!-- <li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li> -->
-
 			
         </ul>
         </div><!--/.nav-collapse -->
-
       </div>
     </div>
     </div>
@@ -513,7 +513,7 @@ $('.navbar-collapse').click('li', function() {
 					Canada.<br> 
 					<span class="icon icon-phone"></span> +14034620868  <br/>
 					<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
-					<span class="icon icon-envelop"></span> email@pravestech.ca <br/>
+					<span class="icon icon-envelop"></span><a href="mailto:email@pravestech.ca">email@pravestech.ca</a>  <br/>
 					
 					<a target="_blank" href="https://www.linkedin.com/company/praves-technologies-ltd-?"><span id="logo_in"><%= image_tag("logo_linkedin.png", alt: "LinkedIn") %></span> </a>
 					

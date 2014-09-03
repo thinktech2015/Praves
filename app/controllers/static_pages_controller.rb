@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
+    
   end
 
   def help
@@ -10,11 +11,15 @@ class StaticPagesController < ApplicationController
   end
 
   def career
-  	 render :layout => 'services_technologies' 	
+    @user = User.new
+  	render :layout => 'services_technologies' 	
   end
 
-  def quote
-  	render :layout => 'services_technologies'   	
+  def quote 
+    @user = User.new
+    render :layout => 'services_technologies'
   end
+
+
   
 end

@@ -1,10 +1,14 @@
 FirstApp::Application.routes.draw do
   
+  resources :users
+
   root :to => 'static_pages#index'
   match '/home',   to: 'static_pages#index',   via: 'get'
   match '/services',   to: 'static_pages#services',   via: 'get'
   match '/career',   to: 'static_pages#career',   via: 'get'
   match '/quote',   to: 'static_pages#quote',   via: 'get'
+  match '/career',   to: 'static_pages#career',   via: 'post'
+  match '/quote',   to: 'static_pages#quote',   via: 'post'
   
   get "static_pages/help"
   
