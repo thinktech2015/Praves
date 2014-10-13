@@ -25,7 +25,7 @@
 
     <div class="col-md-12 col-lg-12 head-bg1">
 
-      <%= form_for @user, html: {id: :form_id } do |f| %>
+      <%= form_for @user, html: {id: :form_id , multipart: :true } do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
@@ -57,8 +57,8 @@
     <%= f.text_field :qualification, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the qualification', required: true  %>
   </div>
   <div class="form-group">
-    <%= f.label :qualification, "Upload Resume" %><br>
-    <%= f.file_field :qualification, type:"file", tabindex: "5", class: "form-control",  placeholder: 'Upload a file', required: true  %>
+    <%= f.label :resume, "Upload Resume" %><br>
+    <%= f.file_field :resume, type:"file", tabindex: "5", class: "form-control",  placeholder: 'Upload a file', required: true  %>
   </div>
   <div class="actions">
     <%= f.submit 'Submit', tabindex: "6", :class => 'btn btn-primary btn-block' %>
@@ -106,7 +106,7 @@
             <h4>Current Jobs</h4>     
           </div>
 
-          <div class="col-md-12 col-lg-12 blog-content">
+          <div class="col-md-12 col-lg-12 blog-content justified">
             <h3>Lead Your Own Destiny</h3>
             <P>Praves Technologies builds strong relations with employees based on mutual trust and respect. Our strength lies in our highly skilled and motivated work force. We look forward to have people with talent, inspiration and sense of adventure for taking themselves and lead to company growth as well.</P>
 

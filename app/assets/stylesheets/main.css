@@ -176,6 +176,10 @@ p {
     text-align: center;
 }
 
+.justified {
+    text-align: justify;
+}
+
 .paragraph-lead {
     font-size: 20px;
     color: #3498db;
@@ -272,6 +276,8 @@ a:after {
 .bottom_buffer {
     margin-bottom: 2em;
 }
+
+
 
 
 /* ==========================================================================

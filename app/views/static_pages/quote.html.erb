@@ -16,7 +16,8 @@
                 <div class="col-md-6 col-lg-6">
                     <div class="col-md-12 col-lg-12 centered">
                           <p> <img class="img img-circle" src="/assets/career4.png" width="60px" height="60px" ></p>
-                          <h4>Send Us Your Query</h4>
+                          <!-- <h4>Send Us Your Query</h4> -->
+                          <h4>LET’S CONNECT</h4>
                     </div>
 
                     <div class="col-md-12 col-lg-12 blog-content bottom_buffer">
@@ -41,7 +42,7 @@
 
  <div class="form-group">   
     <%= f.label :name %><br>
-    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", pattern: "[a-zA-Z. ]{1,50}",  placeholder: 'Enter your name',  required: true  %>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", pattern: "[!-~ ]{1,50}",  placeholder: 'Enter your name',  required: true  %>
   </div>
   <div class="form-group">
     <%= f.label :email %><br>
@@ -49,14 +50,20 @@
   </div>
   <div class="form-group">
     <%= f.label :mobile %><br>
-    <%= f.number_field :mobile, type:"tel", tabindex: "3", class: "form-control", pattern: "[0-9]{10}",  placeholder: 'Enter your mobile number', maxlength:"10", required: true  %>
+    <%= f.number_field :mobile, type:"tel", tabindex: "3", class: "form-control", pattern: "[0-9]{1,20}",  placeholder: 'Enter your mobile number', required: true  %>
   </div>
+  
+  <div class="form-group">
+    <%= f.label :area, 'I am looking for' %><br>
+    <%= f.select(:area,[['Mobile App Development'],['Responsive Web Design and Development'],['Mobile Marketing and Solutions'],['Custom Software Development'],['Graphic Design and Development'],['Web App Development'],['Others (Please add details below)']],{}, tabindex: "4", class: "form-control" ) %>
+  </div>
+
   <div class="form-group">
     <%= f.label :message %><br>
-    <%= f.text_area :message, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Write your details',rows:"3", required: true  %>
+    <%= f.text_area :message, type:"text", tabindex: "5", class: "form-control",  placeholder: 'Please provide a description of your requirement',rows:"3", required: true  %>
   </div>
   <div class="actions">
-    <%= f.submit 'Submit', :class => 'btn btn-primary btn-block' %>
+    <%= f.submit 'Submit', :class => 'btn btn-primary btn-block', tabindex: "6" %>
   </div>
 <% end %>
          
@@ -70,14 +77,17 @@
         <div class="col-md-6 col-lg-6">
           <div class="col-md-12 col-lg-12 centered">          
             <p><img class="img img-circle" src="/assets/career2.png" width="60px" height="60px"></p>
-            <h4>Need Content</h4>     
+          <!--   <h4>How We Can Help You</h4>  -->
+            <h4>TAKE THE FIRST STEP TO TRANSFORM YOUR BUSINESS</h4>     
           </div>
 
-          <div class="col-md-12 col-lg-12 blog-content">
-            <h3>Need Content</h3>
-            <P>Need some Content here</P>
-
-            
+          <div class="col-md-12 col-lg-12 blog-content justified">
+            <ul class="list-group" >
+                <li> Connect with us TODAY and get our consultation</li>
+                <li> We are here to fully understand your business requirements</li>
+                <li> Our experts will provide innovative solutions with services that will exceed your expectations</li>
+                <li> We build an atmosphere of mutual respect and trust</li> 
+            </ul>         
          
           </div>
 
