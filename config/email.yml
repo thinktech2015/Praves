@@ -3,8 +3,8 @@ development:
   :port: 587
   :Domain: mail.google.com
   :authentication: plain
-  :user_name: priyanko.dey33@gmail.com
-  :password: priyanko123456
+  :user_name: business@pravestech.ca
+  :password: c@lg@rypl@ce
   :enable_starttls_auto: true        
 
 production:
@@ -12,8 +12,8 @@ production:
   :port: 587
   :Domain: mail.google.com
   :authentication: plain
-  :user_name: priyanko.dey33@gmail.com
-  :password: priyanko123456
+  :user_name: business@pravestech.ca
+  :password: c@lg@rypl@ce
   :enable_starttls_auto: true 
 
 
